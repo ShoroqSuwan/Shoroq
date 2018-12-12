@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/personal_info"
+        android:layout_alignParentTop="true"
+        android:text="@string/create_account_user"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_name"
+        android:hint="@string/last_name"
+        android:layout_below="@id/personal_info"
+        android:textColor="@color/black_color"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_name"
+        android:hint="@string/first_name"
+        android:layout_below="@id/personal_info"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black_color"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_number_or_email_address"
+        android:layout_below="@id/first_name"
+        android:hint="@string/phone_number_or_email_address"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_password"
+        android:layout_below="@id/phone_number_or_email_address"
+        android:hint="@string/new_password"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:paddingTop="20dp" />
+
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/birth_day"
+        android:text="@string/birth_day"
+        android:layout_below="@id/new_password"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black_color"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/birthday"
+        android:id="@+id/date_picker"
+        android:layout_below="@+id/birth_day"
+        android:layout_alignParentRight="true">
+
+    </ImageButton>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/six"
+        android:layout_below="@+id/date_picker"
+        android:layout_alignParentRight="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="@string/male"
+            android:textSize="25sp"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="@string/female"
+            android:textSize="25sp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/create_account_user_button"
+        android:text="@string/create_account_user"
+        android:layout_below="@+id/six"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="@string/medical_sign_up"
+        android:id="@+id/create_account_supervisor_button"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

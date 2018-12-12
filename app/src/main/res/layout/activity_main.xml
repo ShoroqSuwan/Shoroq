@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/app_name"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:text="@string/app_name_ar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name_edit_text"
+        android:layout_below="@id/app_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name_text_view"
+        android:layout_below="@id/app_name"
+        android:layout_alignParentRight="true"
+        android:text="@string/user_name"
+        android:textColor="@color/black_color"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_edit_text"
+        android:layout_below="@id/user_name_edit_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_text_view"
+        android:layout_below="@id/user_name_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:textColor="@color/black_color"
+        android:paddingRight="20dp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_layout"
+        android:layout_below="@id/password_edit_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_in_user"
+            android:text="@string/user_login"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_in_supervisor"
+            android:layout_marginRight="20dp"
+
+            android:text="@string/supervisor_login"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_account_user"
+            android:text="@string/create_account_user"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_account_supervisor"
+            android:text="@string/create_account_supervisor" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

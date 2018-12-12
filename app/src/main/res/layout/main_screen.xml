@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/tab"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/messages"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/missions"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/marks"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/other_notes"
+            android:background="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/controls"
+        android:layout_below="@+id/tab">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/repeat"
+            android:layout_marginLeft="170dp"/>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/time"/>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/plus_calender"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/controls_text"
+        android:layout_below="@+id/controls">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="170dp"
+            android:text="@string/repeat"
+            android:textSize="25sp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/time"
+            android:textSize="25sp"
+            android:paddingRight="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/days"
+            android:textSize="25sp"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/message_body_main"
+        android:layout_below="@id/controls_text"
+        android:hint="@string/message_body"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/note"
+        android:layout_below="@+id/message_body_main">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pictures"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mic"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pin"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/text"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/note"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/new_message" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="150dp"
+            >
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/save"/>
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/delete"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/save"
+                android:textSize="25sp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/delete"
+                android:textSize="25sp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

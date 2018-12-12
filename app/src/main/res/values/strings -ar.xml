@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_ar">مش متذكر</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="user_login">تسجيل الدخول للمستخدم</string>
+    <string name="supervisor_login">تسجيل الدخول للمشرف</string>
+    <string name="create_account_user">إنشاء حساب للمستخدم</string>
+    <string name="create_account_supervisor">إنشاء حساب للمشرف</string>
+    <string name="create_medical_account">إنشاء حساب طبي</string>
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="phone_number_or_email_address">رقم الهاتف أو البريد الإلكتروني</string>
+    <string name="new_password">كلمة السر االجديدة</string>
+    <string name="birth_day">تاريخ الميلاد</string>
+    <string name="medical_file">الملف الطبي</string>
+    <string name="doctor_name">اسم الطبيب</string>
+    <string name="medicine">الأدوية المستخدمة</string>
+    <string name="other_diseases">أمراض أخرى</string>
+    <string name="medical_notes">ملاحظات طبية</string>
+    <string name="living_place">عنوان السكن</string>
+    <string name="trusted_person_number">أرقام جهة موثوق بها</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="medical_sign_up">إنشاء سجل طبي</string>
+    <string name="medical_id">السجل الطبي</string>
+    <string name="advices">النصائح</string>
+    <string name="about">حول</string>
+    <string name="help">مساعدة</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="connect_with_user">الربط مع المستخدم</string>
+    <string name="send">أرسل</string>
+    <string name="message_body">لديك 300 حرفاً</string>
+    <string name="messages">الرسائل</string>
+    <string name="missions">المهام</string>
+    <string name="marks">العلامات</string>
+    <string name="other_notes">جميع الملاحظات</string>
+    <string name="days">الأيام</string>
+    <string name="time">الوقت</string>
+    <string name="repeat">تكرار</string>
+    <string name="save">حفظ</string>
+    <string name="delete">إزالة</string>
+</resources>
